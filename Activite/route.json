@@ -1,0 +1,12 @@
+import Tache;
+const tache = new Tache({
+    titre,
+    description,
+    date_echeance,
+    priorite,
+  });
+    
+  const utilisateurExistant = await Utilisateur.findOne({ email });
+  if (utilisateurExistant) {
+    return res.status(400).json({ message: 'Lutilisateur existe déjà.' });
+  }
